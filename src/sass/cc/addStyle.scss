@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/**
+ * ccapp
+ * Author:yinyaotao
+ * Version:0.0.1
+ * Date:2017-05-03
+ * Info:后台整体界面的框架内容样式，注：重构整体框架内容
+ * 此为后台样式代码
+ *  润奥项目 
+ */
+.crm-add{
+	background-color:#e5e5e5;
+
+	.crm-add-top{
+		background-color:#000;
+		div{
+			color: #fff;
+		}
+		span{
+			color:#fff;
+			position: absolute;
+		    right: 15px;
+		    top: 14px;
+		}
+	}
+	.crm-add-part{
+		background-color: #fff;
+	}
+}
+

@@ -1,0 +1,44 @@
+{
+  "name": "ccapp",
+  "version": "0.0.1",
+  "description": "cc及远光项目的融合内容",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "app",
+    "ccapp"
+  ],
+  "author": "zyl",
+  "license": "ISC",
+  "devDependencies": {
+    "async-each-series": "^1.1.0",
+    "browser-sync": "^2.11.2",
+    "connect": "^3.4.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cached": "^1.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-file-include": "^0.13.7",
+    "gulp-filter": "^4.0.0",
+    "gulp-header": "^1.7.1",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev-append": "^0.1.6",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.1",
+    "object-assign": "^4.0.1",
+    "pretty-bytes": "^3.0.1",
+    "through2-concurrent": "^1.1.0",
+    "webpack": "^1.13.1"
+  }
+}

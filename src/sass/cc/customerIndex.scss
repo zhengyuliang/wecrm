@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/**
+ * ccapp
+ * Author:yinyaotao
+ * Version:0.0.1
+ * Date:2017-05-03
+ * Info:后台整体界面的框架内容样式，注：重构整体框架内容
+ * 此为后台样式代码
+ *  润奥项目 
+ */
+
+.crm-customer{
+	background-color:#e5e5e5;
+
+	//客户-顶部左箭头
+	.crm-img-left{
+		color: #fff;
+		left: 10px;
+		position: absolute;
+		top: 10px;
+	}
+	.crm-customer-details{
+
+		//客户-顶部背景
+		.crm-img-bg{
+			background-image: url(../img/customer-bg.png);
+			background-size: cover;
+			height: 100px;
+			width: 100%;
+		}
+
+		//客户-顶部公司信息
+		.crm-customer-info{
+			background-color:#fff;
+			text-align: center;
+
+			.crm-customer-logo{
+				border: 2px solid #fff;
+				border-radius: 100%;
+				height: 54px;
+				margin-top: -25px;		
+				text-align: center;
+				width: 54px;
+			}
+
+			p{
+				text-align: center;
+			}
+
+			.crm-customer-tags{
+				display: inline;
+				width: 100%;
+
+				div{
+					display: inline-block;
+					line-height: 15px;
+					margin: 0 10px;
+					i{
+						background-size: contain;
+						display: inline-block;
+						height: 15px;
+						margin-bottom: -2px;
+						width: 15px;
+					}
+				}
+
+				.crm-tag-elc{
+					background-image: url(../img/electric.png);
+				}
+
+				.crm-tag-sczt{
+					background-image: url(../img/marketSubject.png);
+				}
+
+				.crm-tag-place{
+					background-image: url(../img/place.png);
+				}
+			}
+
+		}
+	}
+}
+

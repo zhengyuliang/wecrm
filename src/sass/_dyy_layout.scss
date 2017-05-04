@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+/**
+ * DYY
+ * Author:TD
+ * Version:1.0.0
+ * Date:2016-11-09
+ * Info:后台整体界面的框架内容样式，注：只写整体框架。
+ */
+
+@import "mixins/css3";
+
+@import "globalVars"; //全局变量
+
+// 滚动条样式
+
+::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+      border-radius: 999px;
+      border: 2px solid transparent;
+    }
+
+::-webkit-scrollbar-track {
+      box-shadow: 1px 1px 5px rgba(0,0,0,.2) inset;
+    }
+
+::-webkit-scrollbar-thumb {
+      min-height: 20px;
+      background-clip: content-box;
+      box-shadow: 0 0 0 5px rgba(0,0,0,.2) inset;
+    }
+
+::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+
+// 布局框架内容
+body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden!important;
+}
+
+// .dyy_wraper{
+// 	width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     min-height: 100%;
+//     overflow: hidden;
+//     top: 0;
+//     right: 0;
+//     left: 0;
+//     bottom: 0;
+
+//     .content-wrapper{
+// 		margin-left: 0;
+// 	}
+// }
+// // 头部样式
+// .dyy_main_header{
+//     padding-left: 140px;
+//     min-height: 50px;
+//     position: relative;
+//     background-color: $mainColor;
+
+//     .logo{
+//     	position: absolute;
+//     	top: 0;
+//     	left: 0;
+// 	    display: block;
+// 	    height: 50px;
+// 	    font-size: 20px;
+// 	    line-height: 50px;
+// 	    text-align: center;
+// 	    width: 140px;
+// 	    padding: 0 15px;
+// 	    color: #fff;
+// 	    background-color: $mainColor-hover;
+// 	    overflow: hidden;
+// 	    @include transition(width 0.3s ease-in-out);
+//     }
+
+//     .dyy_header_right{
+//     	position: absolute;
+//     	top: 0;
+//     	right: 0;
+
+//     	.btn{
+//     		height: 50px;
+//     		border:none;
+//     		color: #fff;
+//     		float: left;
+//     		background-color: transparent;
+//     		@include border-radius(0);
+//     		@include transition(all 0.3s ease);
+
+//     		&:hover{
+//     			background-color: rgba(0,0,0,0.1);
+//     		}
+//     		&:focus{
+//     			outline: none;
+//     		}
+//     	}
+
+//     	.open{
+//     		.btn{
+//     			background-color: rgba(0,0,0,0.1);
+//     		}
+//     	}
+//     }
+
+// }
+
+
+// // 内容样式
+// .dyy_content_wrapper{
+// 	position: absolute;
+// 	top: 50px;
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	height: 100%;
+// 	overflow: hidden;
+
+// 	.main-sidebar{
+// 		padding-top: 0;
+// 		bottom: 0;
+// 		height: 100%;
+// 		overflow-y:auto;
+// 	}
+	
+
+// 	.dyy_content_left{
+// 		position: absolute;
+// 		left: 140px;
+// 		width: 160px;
+// 		top: 0;
+// 		bottom: 0;
+// 		height: 100%;
+// 	}
+
+// 	.dyy_content_right{
+// 		width: 100%;
+// 		padding-left: 300px;
+// 		height: 100%;
+// 		overflow-y:auto;
+// 		padding-bottom: 30px;
+// 	}
+// }
+
+// 2016-11-11
+.dyy_body{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	min-height: 100%;
+    overflow: hidden;
+}
+.dyy_header_top{
+	
+}
+.dyy_content{
+	position: relative;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	bottom: 0;
+	right: 0;
+	display: block;
+
+	.dyy_sidebar_body{
+		padding-top: 0px;
+		height: 100%;
+		overflow-y:auto;
+		padding-bottom: 60px;
+	}
+}
+
+// .dyy_content_body{
+// 	padding-left: 160px;
+// 	position: relative;
+// 	// width: 100%;
+// 	height: 100%;
+// 	overflow-y:auto;
+
+// 	@include transition(all 0.3s ease);
+
+// 	.dyy_subNav{
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
+// 		width: 160px;
+// 		bottom: 0;
+// 		background-color: #e1e3e4;
+// 		overflow: hidden;
+// 		@include transition(all 0.3s ease);
+// 	}
+// 	.dyy_subNav_show{
+// 		padding-top: 70px;
+// 		height: 100%;
+// 		overflow-y:auto;
+
+// 		.dyy_subNav_title{
+// 			height: 70px;
+// 			width: 100%;
+// 			margin-top: -70px;
+// 			text-align: center;
+// 		}
+// 	}
+// 	.dyy_subNav_hide{
+// 		border-bottom: 10px solid #b6b7b7;
+// 	    border-left: 20px solid transparent;
+// 	    border-right: 20px solid transparent;
+// 	    width: 80px;
+// 	    position: absolute;
+// 	    /* right: -35px; */
+// 	    margin-top: -20px;
+// 	    top: 50%;
+// 	    @include transition(all 0.3s ease);
+// 	    &:hover{
+// 	    	border-bottom-color: darken(#b6b7b7,10%);
+// 	    }
+// 	}
+// }
+
+.dyy_subNav{
+
+	.dyy_subNav_left{
+		position: absolute;
+		top: 0;
+		height: 100%;
+	}
+	.content-leftdiv-secmenu{
+	    display: block;
+	    height: 100%;
+	    overflow: hidden;
+	    padding-top: 70px;
+	    padding-bottom: 40px;
+	}
+	.content-leftdiv-secmenu-title{
+	    margin-top: -70px;
+	}
+	.content-left-secmenu-ul{
+		height: 100%;
+		padding-bottom: 20px;
+		overflow-y: auto;
+
+		li{
+			@include transition(all 0.5s ease);
+
+			&:hover{
+				background-color: #ecf0f5;
+			}
+			&.active{
+				background-color: #fff;
+			}
+
+			a{
+				color: nth($defaultColor,1);
+			}
+		}
+	}
+
+	.content-leftdiv-secmenubtn {
+	    border-bottom: 10px solid #b6b7b7;
+	    border-left: 20px solid transparent;
+	    border-right: 20px solid transparent;
+	    width: 80px;
+	    position: absolute;
+	    right: -35px;
+	    margin-top: -40px;
+	    cursor:pointer;
+	    top:50%;
+	    @include transition(border-bottom-color 0.5s ease);
+	    &.left{
+	    	@include transform(rotate(270deg));
+	    }
+	    &.right{
+	    	@include transform(rotate(90deg));
+	    }
+	    &:hover{
+	    	border-bottom-color: darken(#b6b7b7, 10%);
+	    }
+	}
+}
+
